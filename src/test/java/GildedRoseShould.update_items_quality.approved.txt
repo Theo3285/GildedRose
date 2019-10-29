@@ -1,0 +1,200 @@
+Item{name='Aged Brie', sellIn=43', quality=3}
+Item{name='+5 Dexterity Vest', sellIn=-50', quality=22}
+Item{name='Elixir of the Mongoose', sellIn=4', quality=5}
+Item{name='Aged Brie', sellIn=-51', quality=-22}
+Item{name='Elixir of the Mongoose', sellIn=49', quality=-26}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=50', quality=-14}
+Item{name='Conjured Mana Cake', sellIn=-13', quality=-12}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-46', quality=0}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-33', quality=-33}
+Item{name='+5 Dexterity Vest', sellIn=9', quality=32}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=45', quality=-34}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-48', quality=-22}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-16', quality=44}
+Item{name='Aged Brie', sellIn=47', quality=-18}
+Item{name='Conjured Mana Cake', sellIn=17', quality=-2}
+Item{name='Elixir of the Mongoose', sellIn=27', quality=-39}
+Item{name='Elixir of the Mongoose', sellIn=21', quality=-29}
+Item{name='+5 Dexterity Vest', sellIn=-30', quality=-33}
+Item{name='Aged Brie', sellIn=-43', quality=-27}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=41', quality=-11}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-29', quality=0}
+Item{name='+5 Dexterity Vest', sellIn=34', quality=-31}
+Item{name='Aged Brie', sellIn=-29', quality=-37}
+Item{name='Conjured Mana Cake', sellIn=9', quality=-35}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-48', quality=0}
+Item{name='Conjured Mana Cake', sellIn=21', quality=-11}
+Item{name='Aged Brie', sellIn=49', quality=-41}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-21', quality=0}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-38', quality=0}
+Item{name='+5 Dexterity Vest', sellIn=-7', quality=-19}
+Item{name='Elixir of the Mongoose', sellIn=26', quality=-25}
+Item{name='Aged Brie', sellIn=-31', quality=45}
+Item{name='Conjured Mana Cake', sellIn=29', quality=29}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-35', quality=0}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-36', quality=43}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=28', quality=22}
+Item{name='Elixir of the Mongoose', sellIn=46', quality=11}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-11', quality=0}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=42', quality=28}
+Item{name='Conjured Mana Cake', sellIn=25', quality=-34}
+Item{name='Conjured Mana Cake', sellIn=-1', quality=-47}
+Item{name='+5 Dexterity Vest', sellIn=-8', quality=29}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-31', quality=-34}
+Item{name='Elixir of the Mongoose', sellIn=10', quality=42}
+Item{name='Conjured Mana Cake', sellIn=5', quality=-49}
+Item{name='Aged Brie', sellIn=36', quality=-31}
+Item{name='Aged Brie', sellIn=-42', quality=2}
+Item{name='Elixir of the Mongoose', sellIn=-27', quality=12}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-49', quality=-11}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-11', quality=-1}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-14', quality=7}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-14', quality=0}
+Item{name='Conjured Mana Cake', sellIn=-12', quality=-44}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-41', quality=0}
+Item{name='Conjured Mana Cake', sellIn=-26', quality=13}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-25', quality=-26}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=1', quality=-7}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-39', quality=0}
+Item{name='Conjured Mana Cake', sellIn=25', quality=-11}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-29', quality=0}
+Item{name='Elixir of the Mongoose', sellIn=-2', quality=-20}
+Item{name='Elixir of the Mongoose', sellIn=-18', quality=-26}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=6', quality=-1}
+Item{name='Conjured Mana Cake', sellIn=-35', quality=46}
+Item{name='+5 Dexterity Vest', sellIn=6', quality=32}
+Item{name='Aged Brie', sellIn=-16', quality=45}
+Item{name='Aged Brie', sellIn=6', quality=-27}
+Item{name='Aged Brie', sellIn=-23', quality=-44}
+Item{name='Elixir of the Mongoose', sellIn=-9', quality=45}
+Item{name='Conjured Mana Cake', sellIn=-28', quality=1}
+Item{name='Aged Brie', sellIn=10', quality=-2}
+Item{name='+5 Dexterity Vest', sellIn=31', quality=5}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=12', quality=35}
+Item{name='Conjured Mana Cake', sellIn=19', quality=-49}
+Item{name='Conjured Mana Cake', sellIn=43', quality=-11}
+Item{name='+5 Dexterity Vest', sellIn=-16', quality=-32}
+Item{name='Aged Brie', sellIn=44', quality=7}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-43', quality=0}
+Item{name='Aged Brie', sellIn=-24', quality=3}
+Item{name='+5 Dexterity Vest', sellIn=-15', quality=-35}
+Item{name='Elixir of the Mongoose', sellIn=-50', quality=-20}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-50', quality=0}
+Item{name='Elixir of the Mongoose', sellIn=4', quality=-40}
+Item{name='Elixir of the Mongoose', sellIn=-42', quality=32}
+Item{name='+5 Dexterity Vest', sellIn=-11', quality=7}
+Item{name='+5 Dexterity Vest', sellIn=3', quality=14}
+Item{name='Elixir of the Mongoose', sellIn=-12', quality=-15}
+Item{name='+5 Dexterity Vest', sellIn=-26', quality=-35}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=50', quality=-25}
+Item{name='+5 Dexterity Vest', sellIn=16', quality=33}
+Item{name='Elixir of the Mongoose', sellIn=-23', quality=44}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=29', quality=42}
+Item{name='Elixir of the Mongoose', sellIn=-12', quality=48}
+Item{name='Aged Brie', sellIn=-32', quality=1}
+Item{name='Aged Brie', sellIn=-26', quality=-18}
+Item{name='+5 Dexterity Vest', sellIn=-39', quality=11}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-47', quality=-32}
+Item{name='+5 Dexterity Vest', sellIn=-1', quality=18}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-2', quality=0}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=38', quality=-47}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-5', quality=0}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=13', quality=42}
+Item{name='Aged Brie', sellIn=48', quality=33}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-14', quality=24}
+Item{name='Conjured Mana Cake', sellIn=18', quality=30}
+Item{name='Aged Brie', sellIn=-38', quality=14}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-37', quality=0}
+Item{name='Aged Brie', sellIn=38', quality=-28}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-23', quality=0}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-46', quality=0}
+Item{name='Elixir of the Mongoose', sellIn=-51', quality=11}
+Item{name='Conjured Mana Cake', sellIn=-30', quality=-20}
+Item{name='Aged Brie', sellIn=34', quality=5}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=21', quality=47}
+Item{name='+5 Dexterity Vest', sellIn=36', quality=44}
+Item{name='+5 Dexterity Vest', sellIn=34', quality=-10}
+Item{name='Conjured Mana Cake', sellIn=-28', quality=21}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-2', quality=49}
+Item{name='+5 Dexterity Vest', sellIn=49', quality=11}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=45', quality=23}
+Item{name='Elixir of the Mongoose', sellIn=24', quality=16}
+Item{name='Aged Brie', sellIn=0', quality=19}
+Item{name='+5 Dexterity Vest', sellIn=26', quality=46}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=19', quality=20}
+Item{name='Conjured Mana Cake', sellIn=20', quality=-21}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=42', quality=-43}
+Item{name='+5 Dexterity Vest', sellIn=-43', quality=-40}
+Item{name='+5 Dexterity Vest', sellIn=-19', quality=-26}
+Item{name='Elixir of the Mongoose', sellIn=-2', quality=28}
+Item{name='Elixir of the Mongoose', sellIn=43', quality=-29}
+Item{name='Elixir of the Mongoose', sellIn=18', quality=-31}
+Item{name='Elixir of the Mongoose', sellIn=27', quality=29}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=23', quality=-38}
+Item{name='+5 Dexterity Vest', sellIn=-50', quality=-2}
+Item{name='Conjured Mana Cake', sellIn=40', quality=-7}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-28', quality=0}
+Item{name='Conjured Mana Cake', sellIn=-30', quality=33}
+Item{name='Aged Brie', sellIn=30', quality=-11}
+Item{name='Aged Brie', sellIn=33', quality=-37}
+Item{name='Elixir of the Mongoose', sellIn=-39', quality=4}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=6', quality=-21}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=16', quality=-26}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=25', quality=-45}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=13', quality=-48}
+Item{name='+5 Dexterity Vest', sellIn=25', quality=14}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-3', quality=0}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-41', quality=50}
+Item{name='+5 Dexterity Vest', sellIn=-37', quality=-28}
+Item{name='Conjured Mana Cake', sellIn=1', quality=-3}
+Item{name='Aged Brie', sellIn=0', quality=-30}
+Item{name='Elixir of the Mongoose', sellIn=39', quality=-47}
+Item{name='Conjured Mana Cake', sellIn=43', quality=-35}
+Item{name='Aged Brie', sellIn=-9', quality=14}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-38', quality=-39}
+Item{name='Elixir of the Mongoose', sellIn=6', quality=49}
+Item{name='Aged Brie', sellIn=38', quality=12}
+Item{name='Aged Brie', sellIn=-35', quality=-5}
+Item{name='Elixir of the Mongoose', sellIn=-6', quality=13}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-11', quality=34}
+Item{name='Conjured Mana Cake', sellIn=37', quality=2}
+Item{name='Elixir of the Mongoose', sellIn=43', quality=-26}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-38', quality=26}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-46', quality=-35}
+Item{name='Elixir of the Mongoose', sellIn=-27', quality=-35}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=12', quality=-44}
+Item{name='+5 Dexterity Vest', sellIn=36', quality=31}
+Item{name='+5 Dexterity Vest', sellIn=41', quality=-9}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=32', quality=-14}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-28', quality=-19}
+Item{name='Aged Brie', sellIn=-47', quality=-39}
+Item{name='+5 Dexterity Vest', sellIn=34', quality=33}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-9', quality=0}
+Item{name='Elixir of the Mongoose', sellIn=-51', quality=-6}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=49', quality=-4}
+Item{name='Conjured Mana Cake', sellIn=-40', quality=-49}
+Item{name='+5 Dexterity Vest', sellIn=38', quality=45}
+Item{name='+5 Dexterity Vest', sellIn=-40', quality=-47}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=33', quality=-9}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-12', quality=22}
+Item{name='+5 Dexterity Vest', sellIn=-23', quality=33}
+Item{name='Conjured Mana Cake', sellIn=-28', quality=5}
+Item{name='Conjured Mana Cake', sellIn=26', quality=31}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-51', quality=0}
+Item{name='+5 Dexterity Vest', sellIn=23', quality=48}
+Item{name='+5 Dexterity Vest', sellIn=-23', quality=34}
+Item{name='+5 Dexterity Vest', sellIn=-39', quality=-50}
+Item{name='Aged Brie', sellIn=-3', quality=-2}
+Item{name='+5 Dexterity Vest', sellIn=-42', quality=6}
+Item{name='Elixir of the Mongoose', sellIn=-25', quality=-2}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-32', quality=-45}
+Item{name='Elixir of the Mongoose', sellIn=-18', quality=29}
+Item{name='Backstage passes to a TAFKAL80ETC concert', sellIn=-37', quality=0}
+Item{name='Aged Brie', sellIn=31', quality=40}
+Item{name='Elixir of the Mongoose', sellIn=19', quality=31}
+Item{name='Conjured Mana Cake', sellIn=9', quality=-3}
+Item{name='Elixir of the Mongoose', sellIn=21', quality=-11}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=-48', quality=39}
+Item{name='+5 Dexterity Vest', sellIn=16', quality=-10}
+Item{name='Sulfuras, Hand of Ragnaros', sellIn=31', quality=-37}
+Item{name='Aged Brie', sellIn=-7', quality=-20}
