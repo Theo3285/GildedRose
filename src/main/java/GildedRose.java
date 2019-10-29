@@ -23,9 +23,7 @@ public class GildedRose {
     }
 
 
-
-    public static void updateQuality()
-    {
+    public static void updateQuality() {
         for (Item item : items) {
             if ("Aged Brie".equals(item.getName())) {
                 increaseItemQuality(item);
@@ -39,9 +37,9 @@ public class GildedRose {
                 }
                 increaseItemQuality(item);
             } else {
-                if (item.getQuality() > 0) {
-                    if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
-                    } else {
+                if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
+                } else {
+                    if (item.getQuality() > 0) {
                         item.setQuality(item.getQuality() - 1);
                     }
                 }
