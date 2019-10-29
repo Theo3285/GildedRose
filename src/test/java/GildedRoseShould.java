@@ -11,7 +11,7 @@ public class GildedRoseShould {
 
     private static final int MINIMUM = -50;
     private static final int MAXIMUM = 101;
-    private static final int MAXIMUM_ITEM_NUMBERS = 200;
+    private static final int MAXIMUM_ITEM_NUMBERS = 2000;
     private static final int SEED = 100;
 
     private List<String> itemsName = Arrays.asList(
@@ -23,6 +23,7 @@ public class GildedRoseShould {
             "Conjured Mana Cake");
 
     private final Random random = new Random(SEED);
+
     private GildedRose gildedRose;
 
     @Before
@@ -62,7 +63,6 @@ public class GildedRoseShould {
     private int generateRandomNumberBetween(int minimum, int maximum) {
         return minimum + random.nextInt(maximum);
     }
-
     private String buildOutputRepresentationFor(List<Item> items) {
         StringBuilder builder = new StringBuilder();
         for (Item item : items) {
