@@ -100,4 +100,9 @@ public class GildedRose {
         }
     }
 
+    public List<Item> updateQuality(List<Item> itemList) {
+        items = itemList;
+        updateQuality();
+        return items;
+    }
 }
