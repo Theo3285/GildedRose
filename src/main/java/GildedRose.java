@@ -25,20 +25,25 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if (item.name.equals("Aged Brie")) {
-                increaseItemQuality(item);
-            } else if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-                if (item.getSellIn() < 11) {
+            switch (item.getName()) {
+                case "Aged Brie":
                     increaseItemQuality(item);
-                }
+                    break;
+                case "Backstage passes to a TAFKAL80ETC concert":
+                    if (item.getSellIn() < 11) {
+                        increaseItemQuality(item);
+                    }
 
-                if (item.getSellIn() < 6) {
+                    if (item.getSellIn() < 6) {
+                        increaseItemQuality(item);
+                    }
                     increaseItemQuality(item);
-                }
-                increaseItemQuality(item);
-            } else if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
-            } else {
-                decreaseItemQuality(item);
+                    break;
+                case "Sulfuras, Hand of Ragnaros":
+                    break;
+                default:
+                    decreaseItemQuality(item);
+                    break;
             }
 
             if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
