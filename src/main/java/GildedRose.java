@@ -57,10 +57,10 @@ public class GildedRose {
                     if ("Backstage passes to a TAFKAL80ETC concert".equals(item.getName())) {
                         item.setQuality(item.getQuality() - item.getQuality());
                     } else {
+                        if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
+                            continue;
+                        }
                         if (item.getQuality() > 0) {
-                            if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
-                                continue;
-                            }
                             item.setQuality(item.getQuality() - 1);
                         }
                     }
