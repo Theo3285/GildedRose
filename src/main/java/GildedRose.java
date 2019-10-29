@@ -36,6 +36,8 @@ public class GildedRose {
                         increaseItemQuality(item);
                     break;
                 case "Backstage passes to a TAFKAL80ETC concert":
+                    increaseItemQuality(item);
+
                     if (item.getSellIn() < 10) {
                         increaseItemQuality(item);
                     }
@@ -43,8 +45,6 @@ public class GildedRose {
                     if (item.getSellIn() < 5) {
                         increaseItemQuality(item);
                     }
-
-                    increaseItemQuality(item);
 
                     if (item.getSellIn() < 0)
                         item.setQuality(item.getQuality() - item.getQuality());
@@ -55,16 +55,6 @@ public class GildedRose {
                     decreaseItemQuality(item);
                     if (item.getSellIn() < 0)
                         decreaseItemQuality(item);
-                    break;
-            }
-
-
-            switch (item.getName()) {
-                case "Aged Brie":
-                    break;
-                case "Backstage passes to a TAFKAL80ETC concert":
-                    break;
-                default:
                     break;
             }
         }
