@@ -53,6 +53,8 @@ public class GildedRose {
 
             if (item.getSellIn() < 0) {
                 switch (item.getName()) {
+                    case "Sulfuras, Hand of Ragnaros":
+                        continue;
                     case "Aged Brie":
                         increaseItemQuality(item);
                         break;
@@ -60,9 +62,6 @@ public class GildedRose {
                         item.setQuality(item.getQuality() - item.getQuality());
                         break;
                     default:
-                        if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
-                            continue;
-                        }
                         decreaseItemQuality(item);
                         break;
                 }
