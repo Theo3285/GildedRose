@@ -12,7 +12,9 @@ public class AgedBrieItemQualityUpdater {
     @Override
     public String toString() {
         return "AgedBrieItemQualityUpdater{" +
-                "item=" + item +
-                '}';
+                "name=" + item.getName()
+                +", sellIn=" + item.getSellIn()
+                +", quality="+item.getQuality()
+                +"}";
     }
 }
