@@ -30,9 +30,7 @@ public class GildedRose {
                 item.setSellIn(item.getSellIn() - 1);
             }
             if ("Aged Brie".equals(item.getName())) {
-                increaseItemQuality(item);
-                if (item.getSellIn() < 0)
-                    increaseItemQuality(item);
+                updateAgedBrieQuality(item);
             } else if ("Backstage passes to a TAFKAL80ETC concert".equals(item.getName())) {
                 increaseItemQuality(item);
 
@@ -53,6 +51,12 @@ public class GildedRose {
                     decreaseItemQuality(item);
             }
         }
+    }
+
+    private static void updateAgedBrieQuality(Item item) {
+        increaseItemQuality(item);
+        if (item.getSellIn() < 0)
+            increaseItemQuality(item);
     }
 
     private static void decreaseItemQuality(Item item) {
