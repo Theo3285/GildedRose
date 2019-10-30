@@ -25,22 +25,26 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if (isSulfuraItem(item)) {
+            if (isSulfura(item)) {
             } else {
                 item.setSellIn(item.getSellIn() - 1);
             }
             if ("Aged Brie".equals(item.getName())) {
                 updateAgedBrieItemQuality(item);
-            } else if ("Backstage passes to a TAFKAL80ETC concert".equals(item.getName())) {
+            } else if (isBackstage(item)) {
                 updateBackstageItemQuality(item);
-            } else if (isSulfuraItem(item)) {
+            } else if (isSulfura(item)) {
             } else {
                 updateDefaultItemQuality(item);
             }
         }
     }
 
-    private static boolean isSulfuraItem(Item item) {
+    private static boolean isBackstage(Item item) {
+        return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
+    }
+
+    private static boolean isSulfura(Item item) {
         return "Sulfuras, Hand of Ragnaros".equals(item.getName());
     }
 
