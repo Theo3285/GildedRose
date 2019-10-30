@@ -25,35 +25,47 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
+            if (isSulfuraItem(item)) {
             } else {
                 item.setSellIn(item.getSellIn() - 1);
             }
             if ("Aged Brie".equals(item.getName())) {
-                updateAgedBrieQuality(item);
+                updateAgedBrieItemQuality(item);
             } else if ("Backstage passes to a TAFKAL80ETC concert".equals(item.getName())) {
-                increaseItemQuality(item);
-
-                if (item.getSellIn() < 10) {
-                    increaseItemQuality(item);
-                }
-
-                if (item.getSellIn() < 5) {
-                    increaseItemQuality(item);
-                }
-
-                if (item.getSellIn() < 0)
-                    item.setQuality(0);
-            } else if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
+                updateBackstageItemQuality(item);
+            } else if (isSulfuraItem(item)) {
             } else {
-                decreaseItemQuality(item);
-                if (item.getSellIn() < 0)
-                    decreaseItemQuality(item);
+                updateDefaultItemQuality(item);
             }
         }
     }
 
-    private static void updateAgedBrieQuality(Item item) {
+    private static boolean isSulfuraItem(Item item) {
+        return "Sulfuras, Hand of Ragnaros".equals(item.getName());
+    }
+
+    private static void updateDefaultItemQuality(Item item) {
+        decreaseItemQuality(item);
+        if (item.getSellIn() < 0)
+            decreaseItemQuality(item);
+    }
+
+    private static void updateBackstageItemQuality(Item item) {
+        increaseItemQuality(item);
+
+        if (item.getSellIn() < 10) {
+            increaseItemQuality(item);
+        }
+
+        if (item.getSellIn() < 5) {
+            increaseItemQuality(item);
+        }
+
+        if (item.getSellIn() < 0)
+            item.setQuality(0);
+    }
+
+    private static void updateAgedBrieItemQuality(Item item) {
         increaseItemQuality(item);
         if (item.getSellIn() < 0)
             increaseItemQuality(item);
