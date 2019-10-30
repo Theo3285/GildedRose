@@ -4,5 +4,9 @@ public class AgedBrieItemShould {
     @Test
     public void do_something() {
         Item agedBrieItem = new Item("Aged Brie", 2, 0);
+        AgedBrieItemQualityUpdater agedBrieQualityUpdater = new AgedBrieItemQualityUpdater(agedBrieItem);
+        agedBrieQualityUpdater.update();
+
+
     }
 }
