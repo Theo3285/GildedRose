@@ -29,7 +29,7 @@ public class GildedRose {
             } else {
                 item.setSellIn(item.getSellIn() - 1);
             }
-            if ("Aged Brie".equals(item.getName())) {
+            if (isAgedBrie(item)) {
                 updateAgedBrieItemQuality(item);
             } else if (isBackstage(item)) {
                 updateBackstageItemQuality(item);
@@ -38,6 +38,10 @@ public class GildedRose {
                 updateDefaultItemQuality(item);
             }
         }
+    }
+
+    private static boolean isAgedBrie(Item item) {
+        return "Aged Brie".equals(item.getName());
     }
 
     private static boolean isBackstage(Item item) {
