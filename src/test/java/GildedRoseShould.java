@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class GildedRoseShould {
 
@@ -30,6 +31,11 @@ public class GildedRoseShould {
         gildedRose.updateQuality(items);
 
         Approvals.verify(buildApprovedOutputFrom(items));
+    }
+
+    private String itemName() {
+        Random random = new Random(100);
+        return itemNames.get(random.nextInt(itemNames.size()));
     }
 
     private String buildApprovedOutputFrom(List<Item> items) {
