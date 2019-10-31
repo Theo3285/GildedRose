@@ -29,6 +29,14 @@ public class GildedRoseShould {
         items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
+        List<Item> tempItems = new ArrayList<Item>();
+        tempItems.add(new Item("+5 Dexterity Vest", 10, 20));
+        tempItems.add(new Item("Aged Brie", 2, 0));
+        tempItems.add(new Item("Elixir of the Mongoose", 5, 7));
+        tempItems.add(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
+        tempItems.add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
+        tempItems.add(new Item("Conjured Mana Cake", 3, 6));
+
         GildedRose gildedRose = new GildedRose();
 
         gildedRose.updateQuality(items);
