@@ -51,6 +51,10 @@ public class GildedRoseShould {
         return generateRandomNumber();
     }
 
+    private int quality() {
+        return generateRandomNumber();
+    }
+
     private int generateRandomNumber(){
         return MINIMUM + random.nextInt(MAXIMUM);
     }
