@@ -1,13 +1,19 @@
 import org.approvaltests.Approvals;
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+@RunWith(MockitoJUnitRunner.class)
 public class GildedRoseShould {
+
+    @Mock
+    Console console;
 
     private static final int MINIMUM = -50;
     private static final int MAXIMUM = 101;
@@ -24,25 +30,19 @@ public class GildedRoseShould {
 
     private final Random random = new Random(SEED);
 
-    private GildedRose gildedRose;
-
-    @Before
-    public void setUp() throws Exception {
-        gildedRose = new GildedRose();
-    }
-
     @Test
     public void update_items_quality() {
-        List<Item> items = buildRandomItems(MAXIMUM_ITEM_NUMBERS);
+        List<Item> items = buildRandomItems();
+        GildedRose gildedRose = new GildedRose(console, items);
 
-        gildedRose.updateQuality(items);
+        gildedRose.updateQuality();
 
         Approvals.verify(buildOutputRepresentationFor(items));
     }
 
-    private List<Item> buildRandomItems(int maximumItemNumbers) {
+    private List<Item> buildRandomItems() {
         List<Item> items = new ArrayList<Item>();
-        for (int i = 0; i < maximumItemNumbers; i++) {
+        for (int i = 0; i < MAXIMUM_ITEM_NUMBERS; i++) {
             items.add(new Item(itemName(), sellIn(), quality()));
         }
         return items;
@@ -53,26 +53,20 @@ public class GildedRoseShould {
     }
 
     private int sellIn() {
-        return generateRandomNumberBetween(MINIMUM,MAXIMUM);
+        return generateRandomNumberBetween();
     }
 
     private int quality() {
-        return generateRandomNumberBetween(MINIMUM,MAXIMUM);
+        return generateRandomNumberBetween();
     }
 
-    private int generateRandomNumberBetween(int minimum, int maximum) {
-        return minimum + random.nextInt(maximum);
+    private int generateRandomNumberBetween() {
+        return MINIMUM + random.nextInt(MAXIMUM);
     }
     private String buildOutputRepresentationFor(List<Item> items) {
         StringBuilder builder = new StringBuilder();
         for (Item item : items) {
-            builder.append("Item{name='")
-                    .append(item.name)
-                    .append("', sellIn=")
-                    .append(item.sellIn)
-                    .append("', quality=")
-                    .append(item.quality)
-                    .append("}\n");
+            builder.append(item + "\r");
         }
         return builder.toString();
     }
