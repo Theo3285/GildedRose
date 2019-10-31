@@ -47,6 +47,10 @@ public class GildedRoseShould {
         return itemNames.get(random.nextInt(itemNames.size()));
     }
 
+    private int sellIn() {
+        return generateRandomNumber();
+    }
+    
     private int generateRandomNumber(){
         return MINIMUM + random.nextInt(MAXIMUM);
     }
