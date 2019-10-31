@@ -9,6 +9,8 @@ import java.util.Random;
 public class GildedRoseShould {
 
     public static final int SEED = 100;
+    public static final int MINIMUM = -50;
+    public static final int MAXIMUM = 101;
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
             "Aged Brie",
@@ -45,8 +47,8 @@ public class GildedRoseShould {
         return itemNames.get(random.nextInt(itemNames.size()));
     }
 
-    private int sellIn(){
-        return -50 + random.nextInt(101);
+    private int generateRandomNumber(){
+        return MINIMUM + random.nextInt(MAXIMUM);
     }
 
     private String buildApprovedOutputFrom(List<Item> items) {
