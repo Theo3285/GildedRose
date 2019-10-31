@@ -36,13 +36,25 @@ public class GildedRose {
         }
     }
 
-    private static void updateDefaultItemQuality(Item item) {
+    private static boolean nameIsBackstage(Item item) {
+        return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
+    }
+
+    private static boolean nameIsAgedBrie(Item item) {
+        return "Aged Brie".equals(item.getName());
+    }
+
+    private static boolean nameIsSulfuras(Item item) {
+        return "Sulfuras, Hand of Ragnaros".equals(item.getName());
+    }
+
+    private static void updateAgedBrieQuality(Item item) {
         decreaseSellIn(item);
 
-        decreaseQuality(item);
+        increaseQuality(item);
 
         if (item.getSellIn() < 0) {
-            decreaseQuality(item);
+            increaseQuality(item);
         }
     }
 
@@ -58,18 +70,19 @@ public class GildedRose {
         if (item.getSellIn() < 5) {
             increaseQuality(item);
         }
-        if (item.getSellIn() < 0)
-            item.setQuality(0);
-    }
-
-    private static void updateAgedBrieQuality(Item item) {
-
-        decreaseSellIn(item);
-
-        increaseQuality(item);
 
         if (item.getSellIn() < 0) {
-            increaseQuality(item);
+            item.setQuality(0);
+        }
+    }
+
+    private static void updateDefaultItemQuality(Item item) {
+        decreaseSellIn(item);
+
+        decreaseQuality(item);
+
+        if (item.getSellIn() < 0) {
+            decreaseQuality(item);
         }
     }
 
@@ -77,17 +90,6 @@ public class GildedRose {
         item.setSellIn(item.getSellIn() - 1);
     }
 
-    private static boolean nameIsBackstage(Item item) {
-        return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
-    }
-
-    private static boolean nameIsAgedBrie(Item item) {
-        return "Aged Brie".equals(item.getName());
-    }
-
-    private static boolean nameIsSulfuras(Item item) {
-        return "Sulfuras, Hand of Ragnaros".equals(item.getName());
-    }
 
     private static void decreaseQuality(Item item) {
         if (item.getQuality() > 0) {
