@@ -2,9 +2,12 @@ import org.approvaltests.Approvals;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GildedRoseShould {
+
+    private List<String> itemNames = Arrays.asList("","","","","","");
 
     @Test
     public void update_quality() {
