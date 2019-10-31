@@ -1,3 +1,4 @@
+import org.approvaltests.Approvals;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -20,6 +21,8 @@ public class GildedRoseShould {
         GildedRose gildedRose = new GildedRose();
 
         gildedRose.updateQuality(items);
+
+        Approvals.verify(buildApprovedOutputFrom(items));
     }
 
     private String buildApprovedOutputFrom(List<Item> items) {
