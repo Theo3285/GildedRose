@@ -17,7 +17,7 @@ public class GildedRoseShould {
         items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
-
+        GildedRose gildedRose = new GildedRose();
     }
 
 }
