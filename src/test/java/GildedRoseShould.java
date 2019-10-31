@@ -17,6 +17,8 @@ public class GildedRoseShould {
             "Backstage passes to a TAFKAL80ETC concert",
             "Conjured Mana Cake");
 
+    private Random random = new Random(SEED);
+
     @Test
     public void update_quality() {
         List<Item> items = new ArrayList<Item>();
@@ -35,7 +37,6 @@ public class GildedRoseShould {
     }
 
     private String itemName() {
-        Random random = new Random(SEED);
         return itemNames.get(random.nextInt(itemNames.size()));
     }
 
