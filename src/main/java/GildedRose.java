@@ -25,7 +25,7 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if ("Sulfuras, Hand of Ragnaros".equals(item.getName())) {
+            if (nameIsSulfuras(item)) {
             } else {
                 item.setSellIn(item.getSellIn() - 1);
             }
@@ -56,7 +56,7 @@ public class GildedRose {
         }
     }
 
-    private static boolean nameIsAgedBrie(Item item) {
+    private static boolean nameIsSulfuras(Item item) {
         return "Sulfuras, Hand of Ragnaros".equals(item.getName());
     }
 
