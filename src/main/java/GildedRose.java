@@ -27,27 +27,35 @@ public class GildedRose {
         for (Item item : items) {
             if (nameIsAgedBrie(item)) {
                 updateAgedBrieQuality(item);
-            } else if (nameIsBackStage(item)) {
-                decreaseSellIn(item);
-                increaseQuality(item);
-
-                if (item.getSellIn() < 10) {
-                    increaseQuality(item);
-                }
-
-                if (item.getSellIn() < 5) {
-                    increaseQuality(item);
-                }
-                if (item.getSellIn() < 0)
-                    item.setQuality(0);
+            } else if (nameIsBackstage(item)) {
+                updateBackstageQuality(item);
             } else if (nameIsSulfuras(item)) {
             } else {
-                decreaseSellIn(item);
-                decreaseQuality(item);
-                if (item.getSellIn() < 0)
-                    decreaseQuality(item);
+                updateDefaultItemQuality(item);
             }
         }
+    }
+
+    private static void updateDefaultItemQuality(Item item) {
+        decreaseSellIn(item);
+        decreaseQuality(item);
+        if (item.getSellIn() < 0)
+            decreaseQuality(item);
+    }
+
+    private static void updateBackstageQuality(Item item) {
+        decreaseSellIn(item);
+        increaseQuality(item);
+
+        if (item.getSellIn() < 10) {
+            increaseQuality(item);
+        }
+
+        if (item.getSellIn() < 5) {
+            increaseQuality(item);
+        }
+        if (item.getSellIn() < 0)
+            item.setQuality(0);
     }
 
     private static void updateAgedBrieQuality(Item item) {
@@ -61,7 +69,7 @@ public class GildedRose {
         item.setSellIn(item.getSellIn() - 1);
     }
 
-    private static boolean nameIsBackStage(Item item) {
+    private static boolean nameIsBackstage(Item item) {
         return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
     }
 
