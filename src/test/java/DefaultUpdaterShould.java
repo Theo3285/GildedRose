@@ -11,6 +11,6 @@ public class DefaultUpdaterShould {
 
         updater.updateQuality();
 
-        assertThat("Item{name='Elixir of the Mongoose', sellIn=-1, quality=0}", is("Item{name='Elixir of the Mongoose', sellIn=-1, quality=0}"));
+        assertThat(item.toString(), is("Item{name='Elixir of the Mongoose', sellIn=-1, quality=0}"));
     }
 }
