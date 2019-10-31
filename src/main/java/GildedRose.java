@@ -28,7 +28,7 @@ public class GildedRose {
             if (nameIsAgedBrie(item)) {
                 updateAgedBrieQuality(item);
             } else if (nameIsBackstage(item)) {
-                BackstageUpdater.updateBackstageQuality(item);
+                updateBackstageQuality(item);
             } else if (nameIsSulfuras(item)) {
             } else {
                 updateDefaultItemQuality(item);
@@ -55,6 +55,24 @@ public class GildedRose {
 
         if (item.getSellIn() < 0) {
             increaseQuality(item);
+        }
+    }
+
+    private static void updateBackstageQuality(Item item) {
+        decreaseSellIn(item);
+
+        increaseQuality(item);
+
+        if (item.getSellIn() < 10) {
+            increaseQuality(item);
+        }
+
+        if (item.getSellIn() < 5) {
+            increaseQuality(item);
+        }
+
+        if (item.getSellIn() < 0) {
+            item.setQuality(0);
         }
     }
 
@@ -89,25 +107,5 @@ public class GildedRose {
         this.items = items;
         this.updateQuality();
         return this.items;
-    }
-
-    private static class BackstageUpdater {
-        private static void updateBackstageQuality(Item item) {
-            decreaseSellIn(item);
-
-            increaseQuality(item);
-
-            if (item.getSellIn() < 10) {
-                increaseQuality(item);
-            }
-
-            if (item.getSellIn() < 5) {
-                increaseQuality(item);
-            }
-
-            if (item.getSellIn() < 0) {
-                item.setQuality(0);
-            }
-        }
     }
 }
