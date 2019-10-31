@@ -25,15 +25,17 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if (nameIsSulfuras(item)) {
-            } else {
-                item.setSellIn(item.getSellIn() - 1);
-            }
+//            if (nameIsSulfuras(item)) {
+//            } else {
+//                decreaseSellIn(item);
+//            }
             if (nameIsAgedBrie(item)) {
+                decreaseSellIn(item);
                 increaseQuality(item);
                 if (item.getSellIn() < 0)
                     increaseQuality(item);
             } else if (nameIsBackStage(item)) {
+                decreaseSellIn(item);
                 increaseQuality(item);
 
                 if (item.getSellIn() < 10) {
@@ -46,13 +48,17 @@ public class GildedRose {
                 if (item.getSellIn() < 0)
                     item.setQuality(0);
             } else if (nameIsSulfuras(item)) {
-                    //continue;
             } else {
+                decreaseSellIn(item);
                 decreaseQuality(item);
                 if (item.getSellIn() < 0)
                     decreaseQuality(item);
             }
         }
+    }
+
+    private static void decreaseSellIn(Item item) {
+        item.setSellIn(item.getSellIn() - 1);
     }
 
     private static boolean nameIsBackStage(Item item) {
