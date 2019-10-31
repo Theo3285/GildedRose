@@ -1,4 +1,4 @@
-class DefaultUpdater extends ItemUpdater {
+class DefaultUpdater extends ItemUpdater{
 
     DefaultUpdater(Item item) {
         super(item);
