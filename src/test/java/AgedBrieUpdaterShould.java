@@ -7,6 +7,6 @@ public class AgedBrieUpdaterShould {
 
         AgedBrieUpdater updater = new AgedBrieUpdater(item);
 
-        
+        updater.updateQuality();
     }
 }
