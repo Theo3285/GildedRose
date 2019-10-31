@@ -27,6 +27,6 @@ public class GildedRoseShould {
         for (Item item : items) {
             builder.append(items + "\r");
         }
-        return "";
+        return builder.toString();
     }
 }
