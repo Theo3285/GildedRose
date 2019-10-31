@@ -30,8 +30,9 @@ public class GildedRoseShould {
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
         List<Item> tempItems = new ArrayList<Item>();
-        tempItems.add(new Item("+5 Dexterity Vest", 10, 20));
-
+        for (int i = 0; i < 2000; i++) {
+            tempItems.add(new Item(itemName(), 10, 20));
+        }
 
         GildedRose gildedRose = new GildedRose();
 
