@@ -26,10 +26,7 @@ public class GildedRose {
     public static void updateQuality() {
         for (Item item : items) {
             if (nameIsAgedBrie(item)) {
-                decreaseSellIn(item);
-                increaseQuality(item);
-                if (item.getSellIn() < 0)
-                    increaseQuality(item);
+                updateAgedBrieQuality(item);
             } else if (nameIsBackStage(item)) {
                 decreaseSellIn(item);
                 increaseQuality(item);
@@ -51,6 +48,13 @@ public class GildedRose {
                     decreaseQuality(item);
             }
         }
+    }
+
+    private static void updateAgedBrieQuality(Item item) {
+        decreaseSellIn(item);
+        increaseQuality(item);
+        if (item.getSellIn() < 0)
+            increaseQuality(item);
     }
 
     private static void decreaseSellIn(Item item) {
