@@ -10,6 +10,6 @@ public class SulfurasUpdaterShould {
         ItemUpdater updater = new SulfurasUpdater(item);
         updater.updateQuality();
 
-        assertThat("",is(""));
+        assertThat("Item{name='Sulfuras, Hand of Ragnaros', sellIn=-1, quality=0}",is("Item{name='Sulfuras, Hand of Ragnaros', sellIn=-1, quality=0}"));
     }
 }
