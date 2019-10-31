@@ -1,4 +1,4 @@
-public class AgedBrieUpdater extends ItemUpdater{
+class AgedBrieUpdater extends ItemUpdater{
 
     AgedBrieUpdater(Item item) {
         super(item);
