@@ -45,6 +45,10 @@ public class GildedRoseShould {
         return itemNames.get(random.nextInt(itemNames.size()));
     }
 
+    private int sellIn(){
+        return 0;
+    }
+
     private String buildApprovedOutputFrom(List<Item> items) {
         StringBuilder builder = new StringBuilder();
         for (Item item : items) {
