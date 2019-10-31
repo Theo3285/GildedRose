@@ -25,10 +25,6 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-//            if (nameIsSulfuras(item)) {
-//            } else {
-//                decreaseSellIn(item);
-//            }
             if (nameIsAgedBrie(item)) {
                 decreaseSellIn(item);
                 increaseQuality(item);
