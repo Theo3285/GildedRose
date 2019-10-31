@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
+
 public class BackstageUpdaterShould {
     @Test
     public void update_quality() {
@@ -7,5 +10,7 @@ public class BackstageUpdaterShould {
         BackstageUpdater updater = new BackstageUpdater(item);
 
         updater.updateQuality();
+
+        assertThat("", is(""));
     }
 }
