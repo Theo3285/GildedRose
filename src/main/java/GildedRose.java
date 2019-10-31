@@ -46,7 +46,7 @@ public class GildedRose {
                 if (item.getSellIn() < 0)
                     item.setQuality(0);
             } else if (nameIsSulfuras(item)) {
-                    continue;
+                    //continue;
             } else {
                 decreaseQuality(item);
                 if (item.getSellIn() < 0)
