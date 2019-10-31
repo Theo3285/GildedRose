@@ -63,6 +63,7 @@ public class GildedRoseShould {
     private int generateRandomNumberBetween() {
         return MINIMUM + random.nextInt(MAXIMUM);
     }
+
     private String buildOutputRepresentationFor(List<Item> items) {
         StringBuilder builder = new StringBuilder();
         for (Item item : items) {

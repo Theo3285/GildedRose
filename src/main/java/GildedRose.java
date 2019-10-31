@@ -28,8 +28,8 @@ public class GildedRose {
             return new AgedBrieUpdater(item);
         if (nameIsBackstage(item))
             return new BackStageUpdater(item);
-        if (nameIsSulfura(item))
-            return new SulfuraUpdater(item);
+        if (nameIsSulfuras(item))
+            return new SulfurasUpdater(item);
         return new DefaultUpdater(item);
     }
 
@@ -41,7 +41,7 @@ public class GildedRose {
         return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
     }
 
-    private boolean nameIsSulfura(Item item) {
+    private boolean nameIsSulfuras(Item item) {
         return "Sulfuras, Hand of Ragnaros".equals(item.getName());
     }
 }

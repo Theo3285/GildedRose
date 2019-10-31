@@ -1,6 +1,6 @@
-public class SulfuraUpdater extends ItemUpdater {
+public class SulfurasUpdater extends ItemUpdater {
 
-    SulfuraUpdater(Item item) {
+    SulfurasUpdater(Item item) {
         super(item);
     }
 
