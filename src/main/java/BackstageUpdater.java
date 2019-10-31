@@ -1,8 +1,8 @@
-public class BackstageUpdater {
-    private Item item;
+public class BackstageUpdater extends ItemUpdater{
+    //private Item item;
 
     BackstageUpdater(Item item) {
-        this.item = item;
+        super(item);
     }
 
     public void updateQuality() {
@@ -23,13 +23,13 @@ public class BackstageUpdater {
         }
     }
 
-    private void decreaseSellIn(Item item) {
-        item.setSellIn(item.getSellIn() - 1);
-    }
-
-    private void increaseQuality(Item item) {
-        if (item.getQuality() < 50) {
-            item.setQuality(item.getQuality() + 1);
-        }
-    }
+//    private void decreaseSellIn(Item item) {
+//        item.setSellIn(item.getSellIn() - 1);
+//    }
+//
+//    private void increaseQuality(Item item) {
+//        if (item.getQuality() < 50) {
+//            item.setQuality(item.getQuality() + 1);
+//        }
+//    }
 }
