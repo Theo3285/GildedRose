@@ -33,7 +33,7 @@ public class GildedRoseShould {
 
         List<Item> tempItems = new ArrayList<Item>();
         for (int i = 0; i < 2000; i++) {
-            tempItems.add(new Item(itemName(), 10, 20));
+            tempItems.add(new Item(itemName(), sellIn(), 20));
         }
 
         GildedRose gildedRose = new GildedRose();
@@ -50,7 +50,7 @@ public class GildedRoseShould {
     private int sellIn() {
         return generateRandomNumber();
     }
-    
+
     private int generateRandomNumber(){
         return MINIMUM + random.nextInt(MAXIMUM);
     }
