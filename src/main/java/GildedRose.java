@@ -33,7 +33,7 @@ public class GildedRose {
                 increaseQuality(item);
                 if (item.getSellIn() < 0)
                     increaseQuality(item);
-            } else if ("Backstage passes to a TAFKAL80ETC concert".equals(item.getName())) {
+            } else if (nameIsBackStage(item)) {
                 increaseQuality(item);
 
                 if (item.getSellIn() < 10) {
@@ -53,6 +53,10 @@ public class GildedRose {
                     decreaseQuality(item);
             }
         }
+    }
+
+    private static boolean nameIsBackStage(Item item) {
+        return "Backstage passes to a TAFKAL80ETC concert".equals(item.getName());
     }
 
     private static boolean nameIsAgedBrie(Item item) {
