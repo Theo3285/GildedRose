@@ -11,6 +11,6 @@ public class BackstageUpdaterShould {
 
         updater.updateQuality();
 
-        assertThat("", is(""));
+        assertThat("Item{name='', sellIn=-1, quality=2}", is("Item{name='', sellIn=-1, quality=2}"));
     }
 }
