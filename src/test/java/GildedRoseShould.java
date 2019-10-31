@@ -18,6 +18,8 @@ public class GildedRoseShould {
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
         GildedRose gildedRose = new GildedRose();
+
+        gildedRose.updateQuality(items);
     }
 
 }
