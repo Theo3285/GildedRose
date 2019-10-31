@@ -11,6 +11,7 @@ public class GildedRoseShould {
     public static final int SEED = 100;
     public static final int MINIMUM = -50;
     public static final int MAXIMUM = 101;
+
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
             "Aged Brie",
