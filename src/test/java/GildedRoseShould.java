@@ -7,7 +7,13 @@ import java.util.List;
 
 public class GildedRoseShould {
 
-    private List<String> itemNames = Arrays.asList("","","","","","");
+    private List<String> itemNames = Arrays.asList(
+            "+5 Dexterity Vest",
+            "Aged Brie",
+            "Elixir of the Mongoose",
+            "",
+            "",
+            "");
 
     @Test
     public void update_quality() {
