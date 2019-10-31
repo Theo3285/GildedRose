@@ -5,5 +5,7 @@ public class BackstageUpdaterShould {
     public void update_quality() {
         Item item = new Item("",0,0);
         BackstageUpdater updater = new BackstageUpdater(item);
+
+        updater.updateQuality();
     }
 }

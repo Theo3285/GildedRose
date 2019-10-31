@@ -6,6 +6,6 @@ public class BackstageUpdater {
     }
 
     public void updateQuality() {
-        
+
     }
 }
