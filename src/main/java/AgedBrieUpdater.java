@@ -4,4 +4,8 @@ public class AgedBrieUpdater {
     public AgedBrieUpdater(Item item) {
         this.item = item;
     }
+
+    public void updateQuality() {
+
+    }
 }
