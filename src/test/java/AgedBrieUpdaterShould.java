@@ -6,12 +6,12 @@ import static org.junit.Assert.assertThat;
 public class AgedBrieUpdaterShould {
     @Test
     public void update_quality() {
-        Item item = new Item("",0,0);
+        Item item = new Item("Aged Brie",0,0);
 
         AgedBrieUpdater updater = new AgedBrieUpdater(item);
 
         updater.updateQuality();
 
-        assertThat(item.toString(), is("Item{name='', sellIn=-1, quality=2}"));
+        assertThat(item.toString(), is("Item{name='Aged Brie', sellIn=-1, quality=2}"));
     }
 }
