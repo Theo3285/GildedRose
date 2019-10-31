@@ -1,8 +1,8 @@
-public class AgedBrieUpdater {
-    private Item item;
+public class AgedBrieUpdater extends ItemUpdater{
+    //private Item item;
 
     AgedBrieUpdater(Item item) {
-        this.item = item;
+        super(item);
     }
 
     void updateQuality() {
@@ -14,14 +14,14 @@ public class AgedBrieUpdater {
             increaseQuality(item);
         }
     }
-
-    private void decreaseSellIn(Item item) {
-        item.setSellIn(item.getSellIn() - 1);
-    }
-
-    private void increaseQuality(Item item) {
-        if (item.getQuality() < 50) {
-            item.setQuality(item.getQuality() + 1);
-        }
-    }
+//
+//    private void decreaseSellIn(Item item) {
+//        item.setSellIn(item.getSellIn() - 1);
+//    }
+//
+//    private void increaseQuality(Item item) {
+//        if (item.getQuality() < 50) {
+//            item.setQuality(item.getQuality() + 1);
+//        }
+//    }
 }

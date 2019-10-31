@@ -8,7 +8,7 @@ public class AgedBrieUpdaterShould {
     public void update_quality() {
         Item item = new Item("Aged Brie",0,0);
 
-        AgedBrieUpdater updater = new AgedBrieUpdater(item);
+        ItemUpdater updater = new AgedBrieUpdater(item);
 
         updater.updateQuality();
 
