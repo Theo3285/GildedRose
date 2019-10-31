@@ -63,6 +63,7 @@ public class GildedRose {
     }
 
     private static void updateAgedBrieQuality(Item item) {
+
         decreaseSellIn(item);
 
         increaseQuality(item);
