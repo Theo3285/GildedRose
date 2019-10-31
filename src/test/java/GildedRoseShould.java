@@ -22,4 +22,7 @@ public class GildedRoseShould {
         gildedRose.updateQuality(items);
     }
 
+    private String buildApprovedOutputFrom(List<Item> items) {
+        return "";
+    }
 }
