@@ -8,6 +8,7 @@ import java.util.Random;
 
 public class GildedRoseShould {
 
+    public static final int SEED = 100;
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
             "Aged Brie",
@@ -34,7 +35,7 @@ public class GildedRoseShould {
     }
 
     private String itemName() {
-        Random random = new Random(100);
+        Random random = new Random(SEED);
         return itemNames.get(random.nextInt(itemNames.size()));
     }
 
