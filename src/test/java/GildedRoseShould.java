@@ -24,6 +24,9 @@ public class GildedRoseShould {
 
     private String buildApprovedOutputFrom(List<Item> items) {
         StringBuilder builder = new StringBuilder();
+        for (Item item : items) {
+
+        }
         return "";
     }
 }
