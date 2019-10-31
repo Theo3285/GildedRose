@@ -44,7 +44,7 @@ public class GildedRose {
                     increaseQuality(item);
                 }
                 if (item.getSellIn() < 0)
-                    item.setQuality(item.getQuality() - item.getQuality());
+                    item.setQuality(0);
             } else if (nameIsSulfuras(item)) {
                     continue;
             } else {
