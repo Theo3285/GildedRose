@@ -1,4 +1,4 @@
-public class BackstageUpdater extends ItemUpdater{
+class BackstageUpdater extends ItemUpdater{
     BackstageUpdater(Item item) {
         super(item);
     }
