@@ -33,7 +33,7 @@ public class GildedRoseShould {
 
         List<Item> tempItems = new ArrayList<Item>();
         for (int i = 0; i < 2000; i++) {
-            tempItems.add(new Item(itemName(), sellIn(), 20));
+            tempItems.add(new Item(itemName(), sellIn(), quality()));
         }
 
         GildedRose gildedRose = new GildedRose();
