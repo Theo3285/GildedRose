@@ -6,7 +6,13 @@ public class AgedBrieUpdater {
     }
 
     public void updateQuality() {
+        decreaseSellIn(item);
 
+        increaseQuality(item);
+
+        if (item.getSellIn() < 0) {
+            increaseQuality(item);
+        }
     }
 
     private static void decreaseSellIn(Item item) {

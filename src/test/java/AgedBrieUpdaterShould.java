@@ -12,6 +12,6 @@ public class AgedBrieUpdaterShould {
 
         updater.updateQuality();
 
-        assertThat(item.toString(), is("Item{name='', sellIn=0, quality=0}"));
+        assertThat(item.toString(), is("Item{name='', sellIn=-1, quality=2}"));
     }
 }
