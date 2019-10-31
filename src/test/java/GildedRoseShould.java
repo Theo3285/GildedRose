@@ -8,10 +8,10 @@ import java.util.Random;
 
 public class GildedRoseShould {
 
-    public static final int SEED = 100;
-    public static final int MINIMUM = -50;
-    public static final int MAXIMUM = 101;
-    public static final int NUMBER_OF_RANDOM_ITEMS = 2000;
+    private static final int SEED = 100;
+    private static final int MINIMUM = -50;
+    private static final int MAXIMUM = 101;
+    private static final int NUMBER_OF_RANDOM_ITEMS = 2000;
 
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
