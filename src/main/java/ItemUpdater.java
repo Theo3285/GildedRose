@@ -5,4 +5,6 @@ public abstract class ItemUpdater {
     public ItemUpdater(Item item) {
         this.item = item;
     }
+
+    abstract void updateQuality();
 }
