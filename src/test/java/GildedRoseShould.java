@@ -11,6 +11,7 @@ public class GildedRoseShould {
     public static final int SEED = 100;
     public static final int MINIMUM = -50;
     public static final int MAXIMUM = 101;
+    public static final int NUMBER_OF_RANDOM_ITEMS = 2000;
 
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
@@ -25,7 +26,7 @@ public class GildedRoseShould {
     @Test
     public void update_quality() {
         List<Item> items = new ArrayList<Item>();
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < NUMBER_OF_RANDOM_ITEMS; i++) {
             items.add(new Item(itemName(), sellIn(), quality()));
         }
 
