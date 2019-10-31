@@ -46,7 +46,7 @@ public class GildedRoseShould {
     }
 
     private int sellIn(){
-        return 0;
+        return -50 + random.nextInt(101);
     }
 
     private String buildApprovedOutputFrom(List<Item> items) {
