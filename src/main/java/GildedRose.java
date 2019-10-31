@@ -38,13 +38,17 @@ public class GildedRose {
 
     private static void updateDefaultItemQuality(Item item) {
         decreaseSellIn(item);
+
         decreaseQuality(item);
-        if (item.getSellIn() < 0)
+
+        if (item.getSellIn() < 0) {
             decreaseQuality(item);
+        }
     }
 
     private static void updateBackstageQuality(Item item) {
         decreaseSellIn(item);
+
         increaseQuality(item);
 
         if (item.getSellIn() < 10) {
@@ -60,9 +64,12 @@ public class GildedRose {
 
     private static void updateAgedBrieQuality(Item item) {
         decreaseSellIn(item);
+
         increaseQuality(item);
-        if (item.getSellIn() < 0)
+
+        if (item.getSellIn() < 0) {
             increaseQuality(item);
+        }
     }
 
     private static void decreaseSellIn(Item item) {
