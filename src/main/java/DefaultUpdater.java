@@ -6,7 +6,13 @@ public class DefaultUpdater extends ItemUpdater {
 
 
     void updateQuality() {
+        decreaseSellIn(item);
 
+        decreaseQuality(item);
+
+        if (item.getSellIn() < 0) {
+            decreaseQuality(item);
+        }
     }
 
     private void decreaseQuality(Item item) {
