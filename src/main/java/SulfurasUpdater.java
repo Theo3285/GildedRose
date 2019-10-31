@@ -4,6 +4,6 @@ class SulfurasUpdater extends ItemUpdater{
     }
 
     void updateQuality() {
-
+        //LSD violation
     }
 }
