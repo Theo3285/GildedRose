@@ -7,7 +7,6 @@ public class AgedBrieUpdaterShould {
     @Test
     public void update_quality() {
         Item item = new Item("Aged Brie",0,0);
-
         ItemUpdater updater = new AgedBrieUpdater(item);
 
         updater.updateQuality();
