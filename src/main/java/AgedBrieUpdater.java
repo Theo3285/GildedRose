@@ -5,7 +5,7 @@ class AgedBrieUpdater extends ItemUpdater{
     }
 
     void updateQuality() {
-        decreaseSellIn(item);
+        decreaseSellIn();
 
         increaseQuality(item);
 

@@ -8,7 +8,7 @@ class BackstageUpdater extends ItemUpdater{
     }
 
     void updateQuality() {
-        decreaseSellIn(item);
+        decreaseSellIn();
 
         increaseQuality(item);
 

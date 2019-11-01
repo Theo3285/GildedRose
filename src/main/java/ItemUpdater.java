@@ -11,7 +11,7 @@ public abstract class ItemUpdater {
 
     abstract void updateQuality();
 
-    void decreaseSellIn(Item item) {
+    void decreaseSellIn() {
         item.setSellIn(item.getSellIn() - 1);
     }
 

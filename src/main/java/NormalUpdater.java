@@ -5,7 +5,7 @@ class NormalUpdater extends ItemUpdater{
     }
 
     void updateQuality() {
-        decreaseSellIn(item);
+        decreaseSellIn();
 
         decreaseQuality();
 
