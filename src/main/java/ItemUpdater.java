@@ -1,6 +1,10 @@
 public abstract class ItemUpdater {
 
-    public static final int MAXIMUM_QUALITY = 50;
+    private static final int MAXIMUM_QUALITY = 50;
+    static final int TEN_DAYS = 10;
+    static final int FIVE_DAYS = 5;
+    static final int ZERO_DAY = 0;
+
     Item item;
 
     ItemUpdater(Item item) {

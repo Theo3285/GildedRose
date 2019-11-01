@@ -1,4 +1,9 @@
 class BackstageUpdater extends ItemUpdater{
+
+//    private static final int TEN_DAYS = 10;
+//    private static final int FIVE_DAYS = 5;
+//    private static final int ZERO_DAY = 0;
+
     BackstageUpdater(Item item) {
         super(item);
     }
@@ -8,15 +13,15 @@ class BackstageUpdater extends ItemUpdater{
 
         increaseQuality(item);
 
-        if (item.getSellIn() < 10) {
+        if (item.getSellIn() < TEN_DAYS) {
             increaseQuality(item);
         }
 
-        if (item.getSellIn() < 5) {
+        if (item.getSellIn() < FIVE_DAYS) {
             increaseQuality(item);
         }
 
-        if (item.getSellIn() < 0) {
+        if (item.getSellIn() < ZERO_DAY) {
             item.setQuality(0);
         }
     }
