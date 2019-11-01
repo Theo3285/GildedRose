@@ -7,14 +7,14 @@ class NormalUpdater extends ItemUpdater{
     void updateQuality() {
         decreaseSellIn(item);
 
-        decreaseQuality(item);
+        decreaseQuality();
 
         if (item.getSellIn() < ZERO_DAY) {
-            decreaseQuality(item);
+            decreaseQuality();
         }
     }
 
-    void decreaseQuality(Item item) {
+    void decreaseQuality() {
         if (item.getQuality() > ZERO_DAY) {
             item.setQuality(item.getQuality() - 1);
         }
