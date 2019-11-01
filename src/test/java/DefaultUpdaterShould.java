@@ -7,7 +7,7 @@ public class DefaultUpdaterShould {
     @Test
     public void update_quality() {
         Item item = new Item("Elixir of the Mongoose",0,1);
-        ItemUpdater updater = new DefaultUpdater(item);
+        ItemUpdater updater = new NormalUpdater(item);
 
         updater.updateQuality();
 

@@ -6,7 +6,7 @@ class QualityFactory {
             return new BackstageUpdater(item);
         if (nameIsSulfuras(item))
             return new SulfurasUpdater(item);
-        return new DefaultUpdater(item);
+        return new NormalUpdater(item);
     }
 
     private static boolean nameIsBackstage(Item item) {

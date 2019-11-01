@@ -1,6 +1,6 @@
-class DefaultUpdater extends ItemUpdater{
+class NormalUpdater extends ItemUpdater{
 
-    DefaultUpdater(Item item) {
+    NormalUpdater(Item item) {
         super(item);
     }
 
