@@ -25,14 +25,6 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-//            if (nameIsAgedBrie(item)) {
-//                updateAgedBrieQuality(item);
-//            } else if (nameIsBackstage(item)) {
-//                updateBackstageQuality(item);
-//            } else if (nameIsSulfuras(item)) {
-//            } else {
-//                updateDefaultItemQuality(item);
-//            }
             ItemUpdater updater = getQualityUpdater(item);
             updater.updateQuality();
         }
@@ -60,60 +52,60 @@ public class GildedRose {
         return "Sulfuras, Hand of Ragnaros".equals(item.getName());
     }
 
-    private static void updateAgedBrieQuality(Item item) {
-        decreaseSellIn(item);
-
-        increaseQuality(item);
-
-        if (item.getSellIn() < 0) {
-            increaseQuality(item);
-        }
-    }
-
-    private static void updateBackstageQuality(Item item) {
-        decreaseSellIn(item);
-
-        increaseQuality(item);
-
-        if (item.getSellIn() < 10) {
-            increaseQuality(item);
-        }
-
-        if (item.getSellIn() < 5) {
-            increaseQuality(item);
-        }
-
-        if (item.getSellIn() < 0) {
-            item.setQuality(0);
-        }
-    }
-
-    private static void updateDefaultItemQuality(Item item) {
-        decreaseSellIn(item);
-
-        decreaseQuality(item);
-
-        if (item.getSellIn() < 0) {
-            decreaseQuality(item);
-        }
-    }
-
-    private static void decreaseSellIn(Item item) {
-        item.setSellIn(item.getSellIn() - 1);
-    }
-
-
-    private static void decreaseQuality(Item item) {
-        if (item.getQuality() > 0) {
-            item.setQuality(item.getQuality() - 1);
-        }
-    }
-
-    private static void increaseQuality(Item item) {
-        if (item.getQuality() < 50) {
-            item.setQuality(item.getQuality() + 1);
-        }
-    }
+//    private static void updateAgedBrieQuality(Item item) {
+//        decreaseSellIn(item);
+//
+//        increaseQuality(item);
+//
+//        if (item.getSellIn() < 0) {
+//            increaseQuality(item);
+//        }
+//    }
+//
+//    private static void updateBackstageQuality(Item item) {
+//        decreaseSellIn(item);
+//
+//        increaseQuality(item);
+//
+//        if (item.getSellIn() < 10) {
+//            increaseQuality(item);
+//        }
+//
+//        if (item.getSellIn() < 5) {
+//            increaseQuality(item);
+//        }
+//
+//        if (item.getSellIn() < 0) {
+//            item.setQuality(0);
+//        }
+//    }
+//
+//    private static void updateDefaultItemQuality(Item item) {
+//        decreaseSellIn(item);
+//
+//        decreaseQuality(item);
+//
+//        if (item.getSellIn() < 0) {
+//            decreaseQuality(item);
+//        }
+//    }
+//
+//    private static void decreaseSellIn(Item item) {
+//        item.setSellIn(item.getSellIn() - 1);
+//    }
+//
+//
+//    private static void decreaseQuality(Item item) {
+//        if (item.getQuality() > 0) {
+//            item.setQuality(item.getQuality() - 1);
+//        }
+//    }
+//
+//    private static void increaseQuality(Item item) {
+//        if (item.getQuality() < 50) {
+//            item.setQuality(item.getQuality() + 1);
+//        }
+//    }
 
     public List<Item> updateQuality(List<Item> items) {
         this.items = items;
