@@ -1,4 +1,5 @@
 class QualityFactory {
+
     static ItemUpdater getUpdaterFor(Item item) {
         if (nameIsAgedBrie(item))
             return new AgedBrieUpdater(item);
