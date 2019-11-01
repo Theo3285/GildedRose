@@ -25,15 +25,27 @@ public class GildedRose {
 
     public static void updateQuality() {
         for (Item item : items) {
-            if (nameIsAgedBrie(item)) {
-                updateAgedBrieQuality(item);
-            } else if (nameIsBackstage(item)) {
-                updateBackstageQuality(item);
-            } else if (nameIsSulfuras(item)) {
-            } else {
-                updateDefaultItemQuality(item);
-            }
+//            if (nameIsAgedBrie(item)) {
+//                updateAgedBrieQuality(item);
+//            } else if (nameIsBackstage(item)) {
+//                updateBackstageQuality(item);
+//            } else if (nameIsSulfuras(item)) {
+//            } else {
+//                updateDefaultItemQuality(item);
+//            }
+            ItemUpdater updater = getQualityUpdater(item);
+            updater.updateQuality();
         }
+    }
+
+    private static ItemUpdater getQualityUpdater(Item item) {
+        if (nameIsAgedBrie(item))
+            return new AgedBrieUpdater(item);
+        if (nameIsBackstage(item))
+            return new BackstageUpdater(item);
+        if (nameIsSulfuras(item))
+            return new SulfurasUpdater(item);
+        return new DefaultUpdater(item);
     }
 
     private static boolean nameIsBackstage(Item item) {

@@ -1,5 +1,8 @@
 class BackstageUpdater extends ItemUpdater{
 
+    private static final int TEN_DAYS = 10;
+    private static final int FIVE_DAYS = 5;
+
     BackstageUpdater(Item item) {
         super(item);
     }
