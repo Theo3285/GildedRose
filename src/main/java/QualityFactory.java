@@ -6,6 +6,8 @@ class QualityFactory {
             return new BackstageUpdater(item);
         if (nameIsSulfuras(item))
             return new SulfurasUpdater(item);
+        if (nameIsConjured(item))
+            return new ConjuredUpdater(item);
         return new NormalUpdater(item);
     }
 
