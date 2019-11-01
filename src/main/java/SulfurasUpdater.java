@@ -4,7 +4,7 @@ class SulfurasUpdater extends ItemUpdater{
     }
 
     void updateQuality() {
-        //May seem like LSD violation but it is a business purpose:
+        //May seem like LSD violation but doing nothing is a business requirement:
         //"Sulfuras", being a legendary item, never has to be sold or decreases in Quality
     }
 }
