@@ -13,6 +13,8 @@ public class GildedRoseShould {
     private static final int MAXIMUM = 101;
     private static final int NUMBER_OF_RANDOM_ITEMS = 2000;
 
+    private Random random = new Random(SEED);
+
     private List<String> itemNames = Arrays.asList(
             "+5 Dexterity Vest",
             "Aged Brie",
@@ -20,8 +22,6 @@ public class GildedRoseShould {
             "Sulfuras, Hand of Ragnaros",
             "Backstage passes to a TAFKAL80ETC concert",
             "Conjured Mana Cake");
-
-    private Random random = new Random(SEED);
 
     @Test
     public void update_quality() {
