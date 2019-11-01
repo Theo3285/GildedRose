@@ -9,7 +9,7 @@ class AgedBrieUpdater extends ItemUpdater{
 
         increaseQuality(item);
 
-        if (item.getSellIn() < 0) {
+        if (item.getSellIn() < ZERO_DAY) {
             increaseQuality(item);
         }
     }

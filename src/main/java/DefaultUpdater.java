@@ -9,13 +9,13 @@ class DefaultUpdater extends ItemUpdater{
 
         decreaseQuality(item);
 
-        if (item.getSellIn() < 0) {
+        if (item.getSellIn() < ZERO_DAY) {
             decreaseQuality(item);
         }
     }
 
     private void decreaseQuality(Item item) {
-        if (item.getQuality() > 0) {
+        if (item.getQuality() > ZERO_DAY) {
             item.setQuality(item.getQuality() - 1);
         }
     }
