@@ -5,6 +5,6 @@ public class ConjuredUpdater extends ItemUpdater{
 
     @Override
     void updateQuality() {
-        
+
     }
 }
