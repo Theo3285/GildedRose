@@ -10,14 +10,14 @@ class BackstageUpdater extends ItemUpdater{
     void updateQuality() {
         decreaseSellIn();
 
-        increaseQuality(item);
+        increaseQuality();
 
         if (item.getSellIn() < TEN_DAYS) {
-            increaseQuality(item);
+            increaseQuality();
         }
 
         if (item.getSellIn() < FIVE_DAYS) {
-            increaseQuality(item);
+            increaseQuality();
         }
 
         if (item.getSellIn() < ZERO_DAY) {

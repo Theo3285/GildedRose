@@ -15,7 +15,7 @@ public abstract class ItemUpdater {
         item.setSellIn(item.getSellIn() - 1);
     }
 
-    void increaseQuality(Item item) {
+    void increaseQuality() {
         if (item.getQuality() < MAXIMUM_QUALITY) {
             item.setQuality(item.getQuality() + 1);
         }
