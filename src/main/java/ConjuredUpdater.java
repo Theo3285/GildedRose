@@ -6,6 +6,6 @@ public class ConjuredUpdater extends NormalUpdater{
     @Override
     void updateQuality() {
         super.updateQuality();
-        
+
     }
 }

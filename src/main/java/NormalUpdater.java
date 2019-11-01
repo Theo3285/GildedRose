@@ -14,7 +14,7 @@ class NormalUpdater extends ItemUpdater{
         }
     }
 
-    private void decreaseQuality(Item item) {
+    void decreaseQuality(Item item) {
         if (item.getQuality() > ZERO_DAY) {
             item.setQuality(item.getQuality() - 1);
         }
