@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
-public class DefaultUpdaterShould {
+public class NormalUpdaterShould {
     @Test
     public void update_quality() {
         Item item = new Item("Elixir of the Mongoose",0,1);
