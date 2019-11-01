@@ -1,5 +1,6 @@
 public abstract class ItemUpdater {
 
+    public static final int MAXIMUM_QUALITY = 50;
     Item item;
 
     ItemUpdater(Item item) {
@@ -13,7 +14,7 @@ public abstract class ItemUpdater {
     }
 
     void increaseQuality(Item item) {
-        if (item.getQuality() < 50) {
+        if (item.getQuality() < MAXIMUM_QUALITY) {
             item.setQuality(item.getQuality() + 1);
         }
     }
