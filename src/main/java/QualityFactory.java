@@ -20,4 +20,8 @@ class QualityFactory {
     private static boolean nameIsSulfuras(Item item) {
         return "Sulfuras, Hand of Ragnaros".equals(item.getName());
     }
+
+    private static boolean nameIsConjured(Item item) {
+        return "Conjured Mana Cake".equals(item.getName());
+    }
 }
