@@ -1,9 +1,9 @@
-public class ConjuredUpdater extends NormalUpdater{
-    public ConjuredUpdater(Item item) {
+class ConjuredUpdater extends NormalUpdater{
+
+    ConjuredUpdater(Item item) {
         super(item);
     }
 
-    @Override
     void updateQuality() {
         super.updateQuality();
         decreaseQuality();
