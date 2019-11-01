@@ -30,9 +30,9 @@ public class GildedRoseShould {
             items.add(new Item(itemName(), sellIn(), quality()));
         }
 
-        GildedRose gildedRose = new GildedRose();
+        GildedRose gildedRose = new GildedRose(items);
 
-        gildedRose.updateQuality(items);
+        gildedRose.updateQuality();
 
         Approvals.verify(buildApprovedOutputFrom(items));
     }
