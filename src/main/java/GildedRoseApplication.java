@@ -6,7 +6,7 @@ public class GildedRoseApplication {
         List<Item> items = new ArrayList<Item>();
 
         System.out.println("OMGHAI!");
-        
+
         items.add(new Item("+5 Dexterity Vest", 10, 20));
         items.add(new Item("Aged Brie", 2, 0));
         items.add(new Item("Elixir of the Mongoose", 5, 7));
