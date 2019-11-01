@@ -18,10 +18,10 @@ public class GildedRose {
         }
     }
 
-    public List<Item> updateQuality(List<Item> items) {
-        this.items = items;
-        this.updateQuality();
-        return this.items;
-    }
+//    public List<Item> updateQuality(List<Item> items) {
+//        this.items = items;
+//        this.updateQuality();
+//        return this.items;
+//    }
 
 }
